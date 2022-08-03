@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Bootcampler
+            </a>
+        </div>
+    </nav>
+</head>
+<body>
+
+<ul>
+    {% for bootcamp in bootcamps %}
+    <div class="card">
+        <div class="card-header">
+            Bootcamp
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ bootcamp.name }}</h5>
+            <p class="card-text">{{ bootcamp.start_date }} -{{ bootcamp.end_date }}</p>
+            <form action="application/" >
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Apply</button>
+            </form>
+
+        </div>
+    </div>
+    {% endfor %}
+</ul>
+</body>
+</html>
