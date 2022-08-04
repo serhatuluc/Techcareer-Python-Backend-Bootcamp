@@ -1,0 +1,2 @@
+<h1>Techcareer Python Backend Bootcamp Final Ödevi</h1>
+<p>Bu projede Techacerer web sayfasından ilham alındı. Yeni bootcampler ekleyip bu bootcamplere kayıt alınabiliyor. Aynı zamanda site yöneticierine meaj gönderilebiliyor. Eğitim boyunca aldığımız bilgilerden yararlanılarak hazırlanan bu sitede modeller kulanılarak database oluşturuldu. Bu modeller Django admin sayfasına bağlandı. Veritabanına eklenen bootcampler önyüzde hazır hale getirildi. Bu bootcamplere başvuru yapabilmek için form oluşturuldu. Ayrıca template kullanılan contact form hazırlandı.</p>
